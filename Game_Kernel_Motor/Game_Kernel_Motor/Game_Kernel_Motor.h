@@ -1,4 +1,4 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 //				-> File Header GAME_KERNEL_MOTOR <-
 //----------------------------------------------------------------------------
 
@@ -36,11 +36,16 @@ protected:
 	WORD        a_wsmall_icon;						// ---> Data of small icon
 	int			a_icycle_frecuency;					// ---> frecuency of cycle in fps	
 	bool		a_ben_espera;						// ---> game state wait
+	
+
 
 
 public:
-	Game_Kernel_Motor();
-	~Game_Kernel_Motor();
 
+	Game_Kernel_Motor(HINSTANCE hinstance,LPTSTR stitle,
+	LPTSTR sclass_window, WORD wicon, WORD wsmall_icon,
+	int iwidth = 640, int ihigh = 480, int icycle_frecuency = 50);  // --> Constructor of class Game_kernel_motor (L‌ong P‌ointer Const Tchar STRing) 
+	
+	virtual ~Game_Kernel_Motor(); // --> Destructor of class Game_kernel_motor.
 };
 
