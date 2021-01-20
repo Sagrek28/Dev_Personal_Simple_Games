@@ -37,9 +37,6 @@ protected:
 	int			a_icycle_frecuency;					// ---> frecuency of cycle in fps	
 	bool		a_ben_espera;						// ---> game state wait
 	
-
-
-
 public:
 
 	Game_Kernel_Motor(HINSTANCE hinstance,LPTSTR stitle,
@@ -47,5 +44,30 @@ public:
 	int iwidth = 640, int ihigh = 480, int icycle_frecuency = 50);  // --> Constructor of class Game_kernel_motor (L‌ong P‌ointer Const Tchar STRing) 
 	
 	virtual ~Game_Kernel_Motor(); // --> Destructor of class Game_kernel_motor.
+
+	//....................................................
+	//			- > Methods Auxiliares <-
+	//....................................................
+
+	BOOL initialization(int iwatch); // --> Create of class windows and afther create the window.
+	
+	LRESULT menssages_manegment(HWND hwindow, UINT msg, 
+		WPARAM wparam, LPARAM lparam);
+
+	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+	//			- > Methods get and set <-
+	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+	HINSTANCE	get_a_hinstance(); //---> seguir por aquí.
+	HWND		a_hwindow;						
+	TCHAR		a_sclass_window[32];				
+	TCHAR		a_stitle[32];						
+	WORD        a_wicon;							
+	WORD        a_wsmall_icon;						
+	int			a_icycle_frecuency;						
+	bool		a_ben_espera;
+
+
+
 };
 
