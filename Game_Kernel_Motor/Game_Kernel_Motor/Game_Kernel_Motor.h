@@ -58,6 +58,10 @@ public:
 	//			- > Methods get and set <-
 	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
+	static Game_Kernel_Motor* get_a_pgame_kernel_motor()
+	{
+		return a_pgame_kernel_motor;
+	}
 	HINSTANCE get_a_hinstance() 
 	{
 		return a_hinstance;
@@ -86,9 +90,32 @@ public:
 	{
 		return a_icycle_frecuency;
 	}
-	bool get_a_ben_espera()
+	BOOL get_a_ben_espera()
 	{
 		return a_ben_espera;
+	}
+
+	//--------------- 
+
+	void set_a_hwindow(HWND hwindow)
+	{
+		a_hwindow = hwindow;
+	}
+	void set_a_wicon(WORD wicon)
+	{
+		a_wicon = wicon;
+	}
+	void set_a_wsmall_icon(WORD wsmall_icon)
+	{
+		a_wsmall_icon = wsmall_icon;
+	}
+	void set_a_icycle_frecuency(int icycle_frecuency)
+	{
+		a_icycle_frecuency = icycle_frecuency;
+	}
+	void set_a_ben_espera(BOOL ben_espera)
+	{
+		a_ben_espera = ben_espera;
 	}
 
 
