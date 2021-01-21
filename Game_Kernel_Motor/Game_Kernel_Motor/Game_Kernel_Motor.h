@@ -58,15 +58,38 @@ public:
 	//			- > Methods get and set <-
 	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
-	HINSTANCE	get_a_hinstance(); //---> seguir por aquí.
-	HWND		a_hwindow;						
-	TCHAR		a_sclass_window[32];				
-	TCHAR		a_stitle[32];						
-	WORD        a_wicon;							
-	WORD        a_wsmall_icon;						
-	int			a_icycle_frecuency;						
-	bool		a_ben_espera;
-
+	HINSTANCE get_a_hinstance() 
+	{
+		return a_hinstance;
+	}
+	HWND get_a_hwindow() 
+	{
+		return a_hwindow;
+	}
+	LPTSTR get_a_sclass_window()
+	{
+		return a_sclass_window;
+	}
+	LPTSTR get_a_stitle()
+	{
+		return a_stitle;
+	}
+	WORD get_a_wicon()
+	{
+		return a_wicon;
+	}
+	WORD get_a_wsmall_icon()
+	{
+		return a_wsmall_icon;
+	}
+	int	 get_a_icycle_frecuency()
+	{
+		return a_icycle_frecuency;
+	}
+	bool get_a_ben_espera()
+	{
+		return a_ben_espera;
+	}
 
 
 };
