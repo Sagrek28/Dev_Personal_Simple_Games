@@ -13,6 +13,17 @@
 #include <time.h>   //Include file header of data types of concept "Time" 
 
 	//.....................................................
+	//			- > Principal functions declaration <-
+	//.....................................................
+
+	
+	//*********** [Function WINAPI] ***********
+
+int WINAPI win_main(HINSTANCE hinstanse, HINSTANCE hinstance_prev,
+	PSTR pcmd_line, int iwatch); // --> main function for execute window of game.
+
+
+	//.....................................................
 	//			- > class: Game_Kernel_Motor <-
 	//.....................................................
 	//			Doc: small base motor game, 
@@ -41,7 +52,7 @@ public:
 
 	Game_Kernel_Motor(HINSTANCE hinstance,LPTSTR stitle,
 	LPTSTR sclass_window, WORD wicon, WORD wsmall_icon,
-	int iwidth = 640, int ihigh = 480, int icycle_frecuency = 50);  // --> Constructor of class Game_kernel_motor (L‌ong P‌ointer Const Tchar STRing) 
+	int iwidth = 640, int ihigh = 480, int icycle_frecuency = 50);  // --> Constructor of class Game_kernel_motor (L‌ong P‌ointer Tchar STRing) 
 	
 	virtual ~Game_Kernel_Motor(); // --> Destructor of class Game_kernel_motor.
 

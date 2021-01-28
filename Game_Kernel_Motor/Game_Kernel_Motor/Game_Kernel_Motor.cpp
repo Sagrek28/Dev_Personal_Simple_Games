@@ -1,6 +1,10 @@
 // Game_Kernel_Motor.cpp : Defines the entry point for the application.
 //
 
+//----------------------------------------------------------------------------
+//				-> File Header GAME_KERNEL_MOTOR (Implemetation) <-
+//----------------------------------------------------------------------------
+
 #include "framework.h"
 #include "Game_Kernel_Motor.h"
 
