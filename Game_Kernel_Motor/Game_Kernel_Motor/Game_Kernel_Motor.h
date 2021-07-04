@@ -12,6 +12,22 @@
 #include "resource.h"
 #include <time.h>   //Include file header of data types of concept "Time" 
 
+//=============================================
+//		-> Function's Declarations <-
+//=============================================
+
+	// --> Point of in of the windows programs
+	
+	int WINAPI f_win_Main(HINSTANCE h_instance, HINSTANCE h_instance_prev,
+	 PSTR s_cmd_line, int i_show);
+
+	// --> Procedure of window
+	LRESULT CALLBACK proc_window(HWND, UINT, WPARAM, LPARAM);
+	
+//=============================================
+
+				// --------- 
+				
 	//.....................................................
 	//			- > Principal functions declaration <-
 	//.....................................................
