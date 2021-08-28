@@ -12,39 +12,47 @@
 #include "resource.h"
 #include <time.h>   //Include file header of data types of concept "Time" 
 
-//=============================================
+//=======================================================
 //		-> Function's Declarations <-
-//=============================================
+//=======================================================
 
 	// --> Point of in of the windows programs
 	
-	int WINAPI f_win_Main(HINSTANCE h_instance, HINSTANCE h_instance_prev,
+	int WINAPI f_win_main(HINSTANCE h_instance, HINSTANCE h_instance_prev,
 	 PSTR s_cmd_line, int i_show);
 
 	// --> Procedure of window
 	LRESULT CALLBACK proc_window(HWND, UINT, WPARAM, LPARAM);
 	
-//=============================================
+	//++++++++++++++++++++++++++++++++++++++++++++
+	// --> auxiliars funtions of the kernel_motor
+	//++++++++++++++++++++++++++++++++++++++++++++
+	
+	BOOL f_inicialize_game(HINSTANCE h_instance);
+	void f_start_game(HWND h_window);
+	void f_loop_game();
+	void f_restart_game(HWND h_window);
+	void f_stop_game(HWND h_window);
+	void f_draw_game(HDC h_dc);
+	void f_exit_game();
+
+	//++++++++++++++++++++++++++++++++++++++++++++
+
+
+//=======================================================
 
 				// --------- 
 				
-	//.....................................................
-	//			- > Principal functions declaration <-
-	//.....................................................
+//.....................................................
+//			- > Principal functions declaration <-
+//.....................................................
 
-	
-	//*********** [Function WINAPI] ***********
-
-int WINAPI win_main(HINSTANCE hinstanse, HINSTANCE hinstance_prev,
-	PSTR pcmd_line, int iwatch); // --> main function for execute window of game.
-
-
-	//.....................................................
-	//			- > class: Game_Kernel_Motor <-
-	//.....................................................
-	//			Doc: small base motor game, 
-	//			in enviroment windows (GUI)
-	//.....................................................
+//.....................................................
+//			- > class: Game_Kernel_Motor <-
+//.....................................................
+//			Doc: small base motor game, 
+//			in enviroment windows (GUI)
+//.....................................................
 
 class Game_Kernel_Motor  
 {
