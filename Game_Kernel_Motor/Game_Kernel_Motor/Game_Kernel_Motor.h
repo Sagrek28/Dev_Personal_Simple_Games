@@ -2,15 +2,17 @@
 //				-> File Header GAME_KERNEL_MOTOR <-
 //----------------------------------------------------------------------------
 
-//----------------------------------------------------------------------------
+//-----------------------------------------------------------------
 //							-> INCLUDES <-
-//----------------------------------------------------------------------------
+//-----------------------------------------------------------------
 
 #pragma once  //--> only include a one file header.
 
 #include "Framework.h" //Include file adds "windows.h"
 #include "resource.h"
 #include <time.h>   //Include file header of data types of concept "Time" 
+
+//-----------------------------------------------------------------
 
 //=======================================================
 //		-> Function's Declarations <-
@@ -43,16 +45,16 @@
 
 				// --------- 
 				
-//.....................................................
+//.......................................................
 //			- > Principal functions declaration <-
-//.....................................................
+//.......................................................
 
-//.....................................................
+//.......................................................
 //			- > class: Game_Kernel_Motor <-
-//.....................................................
+//.......................................................
 //			Doc: small base motor game, 
 //			in enviroment windows (GUI)
-//.....................................................
+//.......................................................
 
 class Game_Kernel_Motor  
 {
@@ -74,9 +76,9 @@ protected:
 	
 public:
 
-	Game_Kernel_Motor(HINSTANCE hinstance,LPTSTR stitle,
-	LPTSTR sclass_window, WORD wicon, WORD wsmall_icon,
-	int iwidth = 640, int ihigh = 480, int icycle_frecuency = 50);  // --> Constructor of class Game_kernel_motor (L‌ong P‌ointer Tchar STRing) 
+	Game_Kernel_Motor(HINSTANCE h_instance,LPTSTR s_title,
+	LPTSTR s_class_window, WORD w_icon, WORD w_small_icon,
+	int i_width = 640, int i_high = 480, int i_cycle_frecuency = 50);  // --> Constructor of class Game_kernel_motor (L‌ong P‌ointer Tchar STRing) 
 	
 	virtual ~Game_Kernel_Motor(); // --> Destructor of class Game_kernel_motor.
 
@@ -84,10 +86,10 @@ public:
 	//			- > Methods Auxiliares <-
 	//....................................................
 
-	BOOL initialization(int iwatch); // --> Create of class windows and afther create the window.
+	BOOL initialization(int i_watch); // --> Create of class windows and afther create the window.
 	
-	LRESULT menssages_manegment(HWND hwindow, UINT msg, 
-		WPARAM wparam, LPARAM lparam);
+	LRESULT menssages_manegment(HWND h_window, UINT ui_msg, 
+		WPARAM w_param, LPARAM l_param);
 
 	//vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 	//			- > Methods get and set <-
@@ -132,27 +134,29 @@ public:
 
 	//--------------- 
 
-	void set_a_hwindow(HWND hwindow)
+	void set_a_hwindow(HWND h_window)
 	{
-		a_hwindow = hwindow;
+		a_hwindow = h_window;
 	}
-	void set_a_wicon(WORD wicon)
+	void set_a_wicon(WORD w_icon)
 	{
-		a_wicon = wicon;
+		a_wicon = w_icon;
 	}
-	void set_a_wsmall_icon(WORD wsmall_icon)
+	void set_a_wsmall_icon(WORD w_small_icon)
 	{
-		a_wsmall_icon = wsmall_icon;
+		a_wsmall_icon = w_small_icon;
 	}
-	void set_a_icycle_frecuency(int icycle_frecuency)
+	void set_a_icycle_frecuency(int i_cycle_frecuency)
 	{
-		a_icycle_frecuency = icycle_frecuency;
+		a_icycle_frecuency = i_cycle_frecuency;
 	}
-	void set_a_ben_espera(BOOL ben_espera)
+	void set_a_ben_espera(BOOL b_en_espera)
 	{
-		a_ben_espera = ben_espera;
+		a_ben_espera = b_en_espera;
 	}
-
-
 };
+
+//.......................................................
+
+//----------------------------------------------------------------------------
 
